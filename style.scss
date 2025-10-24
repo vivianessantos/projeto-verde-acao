@@ -2,206 +2,321 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset básico e configuração global */
-*{
-    margin: 0; /* remove margens padrão de todos os elementos */
-    padding: 0; /* remove espaçamento interno padrão */
-    box-sizing: border-box; /* faz com que padding e border não aumentem o tamanho do elemento */
-    font-family: "Roboto", sans-serif; /* define fonte padrão */
+* {
+  margin: 0;
+  /* remove margens padrão de todos os elementos */
+  padding: 0;
+  /* remove espaçamento interno padrão */
+  box-sizing: border-box;
+  /* faz com que padding e border não aumentem o tamanho do elemento */
+  font-family: "Roboto", sans-serif;
+  /* define fonte padrão */
 }
 
 /* Estilização do header da página */
 header {
-  background-image: url("./assets/Banner.png");  /* imagem de fundo do header */
-  background-repeat: no-repeat; /* não repete a imagem */
-  background-position: center; /* centraliza a imagem */
-  background-size: cover; /* cobre toda a área do header */
-  height: 80vh; /* altura de 80% da altura da tela */
-  text-align: center; /* centraliza textos dentro do header */
+  background-image: url("./assets/Banner.png");
+  /* imagem de fundo do header */
+  background-repeat: no-repeat;
+  /* não repete a imagem */
+  background-position: center;
+  /* centraliza a imagem */
+  background-size: cover;
+  /* cobre toda a área do header */
+  height: 80vh;
+  /* altura de 80% da altura da tela */
+  text-align: center;
+  /* centraliza textos dentro do header */
 
   /* Estilização do título dentro do header */
-  h1{
-    font-size: 5rem; /* tamanho grande do título */
-    font-weight: 700; /* deixa o título em negrito */
-    margin-bottom: 15px; /* espaçamento abaixo do título */
-    color: white; /* cor branca */
+  h1 {
+    font-size: 5rem;
+    /* tamanho grande do título */
+    font-weight: 700;
+    /* deixa o título em negrito */
+    margin-bottom: 15px;
+    /* espaçamento abaixo do título */
+    color: white;
+    /* cor branca */
   }
 
   /* Estilização do parágrafo dentro do header */
-  p{
-    font-size: 1.5rem; /* tamanho do texto */
-    width: 50vw; /* largura relativa a 50% da tela */
-    margin: 0 auto; /* centraliza horizontalmente */
-    margin-bottom: 25px; /* espaço abaixo do parágrafo */
-    font-weight: bold; /* deixa o texto em negrito */
-    color: white; /* cor branca */
+  p {
+    font-size: 1.5rem;
+    /* tamanho do texto */
+    width: 50vw;
+    /* largura relativa a 50% da tela */
+    margin: 0 auto;
+    /* centraliza horizontalmente */
+    margin-bottom: 25px;
+    /* espaço abaixo do parágrafo */
+    font-weight: bold;
+    /* deixa o texto em negrito */
+    color: white;
+    /* cor branca */
   }
 
   /* Estilização do botão dentro do header */
-  button{
-    background-color: #66BB6A; /* cor verde */
-    color:white; /* texto branco */
-    border: none; /* sem borda */
-    padding: 20px 40px; /* espaçamento interno */
-    border-radius:30px; /* cantos arredondados */
-    font-size: 1rem; /* tamanho do texto */
-    font-weight: bold; /* negrito */
-    cursor: pointer; /* cursor de mãozinha ao passar por cima */
+  button {
+    background-color: #66BB6A;
+    /* cor verde */
+    color: white;
+    /* texto branco */
+    border: none;
+    /* sem borda */
+    padding: 20px 40px;
+    /* espaçamento interno */
+    border-radius: 30px;
+    /* cantos arredondados */
+    font-size: 1rem;
+    /* tamanho do texto */
+    font-weight: bold;
+    /* negrito */
+    cursor: pointer;
+    /* cursor de mãozinha ao passar por cima */
   }
 
   /* Efeito hover do botão do header */
   button:hover {
-    background-color: #57a05c; /* muda para verde mais escuro ao passar o mouse */
+    background-color: #57a05c;
+    /* muda para verde mais escuro ao passar o mouse */
   }
 
   /* Caixa interna do header para sobreposição de fundo */
-  .box-header{
-    background: rgba(0, 0, 0, 0.4); /* fundo semi-transparente */
-    height: inherit ; /* herda altura do header */
-    padding: 200px 40px 40px 40px; /* espaçamento interno: top, right, bottom, left */
-    display: inline-block; /* exibe como bloco em linha */
-    width: 100%; /* ocupa toda largura */
-    text-align: center; /* centraliza conteúdo */
+  .box-header {
+    background: rgba(0, 0, 0, 0.4);
+    /* fundo semi-transparente */
+    height: inherit;
+    /* herda altura do header */
+    padding: 200px 40px 40px 40px;
+    /* espaçamento interno: top, right, bottom, left */
+    display: inline-block;
+    /* exibe como bloco em linha */
+    width: 100%;
+    /* ocupa toda largura */
+    text-align: center;
+    /* centraliza conteúdo */
   }
 }
 
 /* Seção de cards */
 .cards {
-    background-color: #f1f8c9; /* fundo verde clarinho */
-    padding: 50px 60px; /* espaçamento interno */
-    text-align: center; /* centraliza conteúdo */
+  background-color: #f1f8c9;
+  /* fundo verde clarinho */
+  padding: 50px 60px;
+  /* espaçamento interno */
+  text-align: center;
+  /* centraliza conteúdo */
 
-    /* Cada card individual */
-    .card {
-        background-color: white; /* fundo branco */
-        width: 308px; /* largura fixa */
-        height: 416px; /* altura fixa */
-        margin: 15px; /* espaçamento entre cards */
-        padding-bottom: 20px; /* espaçamento interno inferior */
-        display: inline-block; /* posicionamento em linha */
-        border-radius: 10px; /* cantos arredondados */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* sombra leve */
-        transition: transform 0.2s, box-shadow 0.2s; /* animação suave ao passar o mouse */
+  /* Cada card individual */
+  .card {
+    background-color: white;
+    /* fundo branco */
+    width: 308px;
+    /* largura fixa */
+    height: 416px;
+    /* altura fixa */
+    margin: 15px;
+    /* espaçamento entre cards */
+    padding-bottom: 20px;
+    /* espaçamento interno inferior */
+    display: inline-block;
+    /* posicionamento em linha */
+    border-radius: 10px;
+    /* cantos arredondados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* sombra leve */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* animação suave ao passar o mouse */
 
-        /* Imagem dentro do card */
-        img {
-        width: 100%; /* ocupa toda a largura do card */
-        border-radius: 10px 10px 0 0; /* arredonda apenas a parte superior da imagem */
-        }
-
-        /* Título do card */
-        h2 {
-        font-size: 1.5rem; /* tamanho do texto */
-        font-weight: bold; /* negrito */
-        margin-top: 20px; /* espaçamento acima */
-        margin-bottom: 10px; /* espaçamento abaixo */
-        color: #000000; /* cor preta */
-        }
-
-        /* Descrição do card */
-        p {
-        font-size: 1rem; /* tamanho do texto */
-        color: #000000; /* cor preta */
-        margin: 0 20px 20px 20px; /* espaçamento: top, right, bottom, left */
-        line-height: 1.4; /* altura da linha */
-        min-height: 50px; /* altura mínima do parágrafo */
-        }
-
-        /* Botão dentro do card */
-        button {
-        background-color: #66BB6A; /* cor verde */
-        color: white; /* texto branco */
-        border: none; /* sem borda */
-        padding: 10px 25px; /* espaçamento interno */
-        border-radius: 20px; /* cantos arredondados */
-        font-weight: bold; /* negrito */
-        cursor: pointer; /* cursor de mãozinha */
-        }
-
-        /* Efeito hover do botão do card */
-        button:hover {
-            background-color: #57a05c; /* verde mais escuro */
-        }  
+    /* Imagem dentro do card */
+    img {
+      width: 100%;
+      /* ocupa toda a largura do card */
+      border-radius: 10px 10px 0 0;
+      /* arredonda apenas a parte superior da imagem */
     }
+
+    /* Título do card */
+    h2 {
+      font-size: 1.5rem;
+      /* tamanho do texto */
+      font-weight: bold;
+      /* negrito */
+      margin-top: 20px;
+      /* espaçamento acima */
+      margin-bottom: 10px;
+      /* espaçamento abaixo */
+      color: #000000;
+      /* cor preta */
+    }
+
+    /* Descrição do card */
+    p {
+      font-size: 1rem;
+      /* tamanho do texto */
+      color: #000000;
+      /* cor preta */
+      margin: 0 20px 20px 20px;
+      /* espaçamento: top, right, bottom, left */
+      line-height: 1.4;
+      /* altura da linha */
+      min-height: 50px;
+      /* altura mínima do parágrafo */
+    }
+
+    /* Botão dentro do card */
+    button {
+      background-color: #66BB6A;
+      /* cor verde */
+      color: white;
+      /* texto branco */
+      border: none;
+      /* sem borda */
+      padding: 10px 25px;
+      /* espaçamento interno */
+      border-radius: 20px;
+      /* cantos arredondados */
+      font-weight: bold;
+      /* negrito */
+      cursor: pointer;
+      /* cursor de mãozinha */
+    }
+
+    /* Efeito hover do botão do card */
+    button:hover {
+      background-color: #57a05c;
+      /* verde mais escuro */
+    }
+  }
 }
 
 /* Efeito hover para todo card */
 .card:hover {
-  transform: translateY(-5px); /* sobe levemente */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* sombra mais intensa */
+  transform: translateY(-5px);
+  /* sobe levemente */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  /* sombra mais intensa */
 }
 
 /* Seção de formulário */
 .forms {
-  background-color: #e8f5e9; /* verde clarinho */
-  text-align: center; /* centraliza conteúdo */
-  padding: 60px 20px; /* espaçamento interno */
+  background-color: #e8f5e9;
+  /* verde clarinho */
+  text-align: center;
+  /* centraliza conteúdo */
+  padding: 60px 20px;
+  /* espaçamento interno */
 
   /* Título do formulário */
   h2 {
-    font-size: 1.7rem;
-    color: #2e7d32; /* verde escuro */
+    font-size: 1.9rem;
+    color: #2e7d32;
+    /* no figma é preto, mas achei mais bonito o verde escuro..rs */
     margin-bottom: 10px;
   }
 
   /* Descrição do formulário */
   p {
-    color: #555; /* cinza escuro */
+    color: #555;
+    /* cinza escuro */
     font-size: 0.8rem;
-    max-width: 500px; /* largura máxima do texto */
-    margin: 0 auto 40px auto; /* centraliza e espaço inferior */
-    line-height: 1.5; /* altura da linha */
+    max-width: 500px;
+    /* largura máxima do texto */
+    margin: 0 auto 40px auto;
+    /* centraliza e espaço inferior */
+    line-height: 1.5;
+    /* altura da linha */
   }
 
   /* Formulário em si */
   form {
-    display: inline-block; /* bloco centralizado */
-    text-align: left; /* textos alinhados à esquerda */
-    background-color: #e8f5e9; /* fundo do formulário */
+    display: inline-block;
+    /* bloco centralizado */
+    text-align: left;
+    /* textos alinhados à esquerda */
+    background-color: #e8f5e9;
+    /* fundo do formulário */
   }
 
-  /* Inputs e selects */
- input, select {
-  display: block; /* ocupam linha inteira */
-  width: 520px; /* largura fixa */
-  padding: 15px; /* espaçamento interno */
-  margin: 10px auto; /* centraliza horizontalmente */
-  border-radius: 8px; /* cantos arredondados */
-  border: none; /* sem borda */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* sombra leve */
-  font-size: 1rem; /* tamanho do texto */
+input,
+select {
+  display: block;          /* ocupam linha inteira */
+  width: 520px;            /* largura fixa */
+  padding: 15px;           /* espaçamento interno */
+  margin: 10px auto;       /* centraliza horizontalmente */
+  border-radius: 8px;      /* cantos arredondados */
+  border: none;            /* sem borda */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra leve */
+  font-size: 1rem;         /* tamanho do texto */
+  color: #8E8E8E;          /* cor do texto e do select selecionado */
 }
+
+select {
+ 
+  background: white url("assets/Vector.png") no-repeat right 15px center; /* Define o fundo do select: cor branca + imagem de seta */
+  background-size: 12px;  /* Ajusta o tamanho da imagem de fundo (a seta) para 12px */
+  color: #8E8E8E; /* Define a cor do texto que aparece dentro do select (opção visível no campo) */
+  -webkit-appearance: none; /* Remove a aparência padrão (estilos nativos) em navegadores baseados em WebKit (Chrome, Safari) */
+  -moz-appearance: none; /* Remove a aparência padrão no Firefox */
+  appearance: none; /* Remove a aparência padrão em navegadores que suportam a propriedade unificada */
+}
+
+/* Placeholder dos inputs */
+input::placeholder {
+  color: #8E8E8E;
+}
+
+
 
   /* Botão do formulário */
   button {
-    display: block; /* ocupa linha inteira */
-    background-color: #66BB6A; /* verde */
-    color: white; /* texto branco */
-    border: none; /* sem borda */
-    width: 520px; /* largura igual aos inputs */
-    padding: 15px; /* espaçamento interno */
-    border-radius: 8px; /* cantos arredondados */
-    margin: 20px auto 0 auto; /* centralizado com margem superior */
-    font-weight: bold; /* negrito */
-    cursor: pointer; /* cursor de mão */
+    display: block;
+    /* ocupa linha inteira */
+    background-color: #66BB6A;
+    /* verde */
+    color: white;
+    /* texto branco */
+    border: none;
+    /* sem borda */
+    width: 520px;
+    /* largura igual aos inputs */
+    padding: 15px;
+    /* espaçamento interno */
+    border-radius: 8px;
+    /* cantos arredondados */
+    margin: 20px auto 0 auto;
+    /* centralizado com margem superior */
+    font-weight: bold;
+    /* negrito */
+    cursor: pointer;
+    /* cursor de mão */
   }
 
   /* Efeito hover do botão do formulário */
   button:hover {
-    background-color: #57a05c; /* verde mais escuro */
+    background-color: #57a05c;
+    /* verde mais escuro */
   }
 }
 
 /* Estilização do footer */
 footer {
-  background-color: #66BB6A; /* mesmo verde do botão */
-  text-align: center; /* centraliza conteúdo */
-  padding: 40px 0; /* espaçamento superior e inferior */
+  background-color: #66BB6A;
+  /* mesmo verde do botão */
+  text-align: center;
+  /* centraliza conteúdo */
+  padding: 40px 0;
+  /* espaçamento superior e inferior */
 }
 
 /* Texto dentro do footer */
 footer p {
-  color: white; /* texto branco */
+  color: white;
+  /* texto branco */
   font-size: 1rem;
-  margin: 0; /* remove margem */
-  font-weight: 500; /* peso da fonte */
+  margin: 0;
+  /* remove margem */
+  font-weight: 500;
+  /* peso da fonte */
 }
