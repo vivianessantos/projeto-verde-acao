@@ -1,0 +1,116 @@
+
+<!--------------- Comentários de explicação para ajudar meus colegas ------------------>
+
+<!-- Define o tipo de documento como HTML5 -->
+<!DOCTYPE html>
+<!-- Início do documento HTML, idioma definido como português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para UTF-8, permitindo acentuação -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Verde Ação</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da página, normalmente contém logo, título e menu -->
+    <header>
+        <!-- Caixa interna do header para organizar o conteúdo -->
+        <div class="box-header">
+            <!-- Título principal da página -->
+            <h1>Verde Ação</h1>
+            <!-- Parágrafo com a descrição ou slogan da organização -->
+            <p>
+                Ser voluntário na Verde Ação é plantar esperança e colher transformação. Juntos, cuidamos do planeta e
+                inspiramos mudanças reais!
+            </p>
+            <!-- Botão de ação principal do header -->
+            <button>Quero ser um voluntário</button>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção de cards que apresentam diferentes ações/serviços -->
+        <section class="cards">
+            <!-- Cada card representa uma ação ou atividade -->
+            <article class="card">
+                <!-- Imagem representativa da ação -->
+                <img src="./assets/Rectangle 3 (1).png" alt="">
+                <!-- Subtítulo do card -->
+                <h2>Plantio de mudas</h2>
+                <!-- Descrição curta da atividade -->
+                <p>Cada muda plantada ajuda a restaurar o meio ambiente </p>
+                <!-- Botão para ver mais detalhes sobre a atividade -->
+                <button>Ver mais</button>
+            </article>
+
+            <article class="card">
+                <img src="./assets/download 2.png" alt="">
+                <h2>Educação Ambiental</h2>
+                <p>Promove oficinas e rodas de conversas</p>
+                <button>Ver mais</button>
+            </article>
+
+            <article class="card">
+                <img src="./assets/artigo-5 1.png" alt="">
+                <h2>Cuidados</h2>
+                <p>Ajude a manter areas preservadas</p>
+                <button>Ver mais</button>
+            </article>
+
+            <article class="card">
+                <img src="./assets/florestas 1.png" alt="">
+                <h2>Mapeamento</h2>
+                <p>Indentifique areas que precisam de mapeamento</p>
+                <button>Ver mais</button>
+            </article>
+        </section>
+
+        <!-- Seção de formulário para cadastro de voluntários -->
+        <section class="forms">
+            <!-- Título do formulário -->
+            <h2>Cadastre-se como voluntário</h2>
+            <!-- Pequena descrição incentivando a participação -->
+            <p>Faça parte de ações que transformam o mundo. Com pequenas atitudes, você pode gerar grandes impactos na
+                natureza e na comunidade.</p>
+
+            <!-- Formulário de cadastro, sem ação definida (pode ser enviada para um backend) -->
+            <form action="">
+                <!-- Campo de texto para o nome, obrigatório -->
+                <input type="text" placeholder="NOME" name="nome" required />
+
+                <!-- Campo de e-mail, obrigatório -->
+                <input type="email" placeholder="EMAIL" name="email" required />
+
+                <!-- Campo de texto para a cidade, obrigatório -->
+                <input type="text" placeholder="CIDADE" name="cidade" required />
+
+                <!-- Campo de seleção para escolher a atividade, obrigatório -->
+                <select name="atividade" required>
+                    <option value="">SELECIONE A ATIVIDADE</option>
+                    <option value="plantio">Plantio de Mudas</option>
+                    <option value="educacao">Educação Ambiental</option>
+                    <option value="cuidados">Cuidados</option>
+                    <option value="mapeamento">Mapeamento</option>
+                </select>
+
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Informação de direitos autorais -->
+        <p>© todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>
